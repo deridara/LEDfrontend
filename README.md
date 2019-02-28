@@ -1,8 +1,6 @@
 # LEDfrontend
-=======
 
-Frontend for home lights
-
+##Frontend for home lights
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
