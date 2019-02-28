@@ -1,0 +1,88 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  background: #ebebeb;
+}
+
+.wrapper {
+  max-width: 300px;
+  min-width: 200px;
+  margin: -10px auto 0;
+  background: white;
+  padding: 20px;
+}
+
+.modes-selector {
+  width: 100px;
+}
+
+.led-input-block {
+  margin: 0 0 15px;
+  position: relative;
+}
+
+.label-text {
+  display: inline-block;
+  margin: 15px 0 10px;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: left;
+  color: #494949;
+}
+
+.slider-num {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  display: inline-block;
+  color: #b4b4b4;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.led-input-slider {
+  width: 100%;
+}
+
+.led-input-time {
+  display: block;
+  margin: auto;
+  height: 50px;
+  width: 60%;
+  font-size: 20px;
+  box-sizing: border-box;;
+  padding: 10px;
+}
+
+.led-input-color {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 50px;
+}
+
+.led-input-mode {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 50px;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.apply-button {
+  height: 50px;
+  width: 95%;
+  background: #494949;
+  color: white;
+  font-size: 20px;
+}
+
+.apply-button:hover {
+  background: #698240;
+}
+
+.apply-button:active {
+  background: #8bc034;
+}
