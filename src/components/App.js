@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../index.css";
 import LEDInput from "./LEDInput";
 import { setParameters, setDate, getStatus } from "../services.js";
-import pic from "../ill.jpg";
 
 export const brightnessSliderMax = 10;
 export const speedSliderMax = 10;
@@ -21,12 +20,11 @@ class App extends Component {
 
   componentDidMount = () => {
     setDate();
-    console.log("DID MOUNT");
-    this.setState({ currentStatus: getStatus() || "noup" });
+    this.setState({ currentStatus: getStatus() || "no status" });
   };
 
   handleRefresh = () => {
-    this.setState({ currentStatus: getStatus() || "noup" });
+    this.setState({ currentStatus: getStatus() || "no status" });
   };
 
   handleChange = event => {
@@ -38,7 +36,6 @@ class App extends Component {
   handleSubmit = event => {
     event.preventDefault();
     setParameters(this.state.params);
-    console.log("FORM SUBMIT", this.state);
   };
 
   getBrightnessInput = () => (
@@ -109,7 +106,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state);
     const brightnessInput = this.getBrightnessInput();
     const speedInput = this.getSpeedInput();
     const timeInput = this.getTimeInput();
